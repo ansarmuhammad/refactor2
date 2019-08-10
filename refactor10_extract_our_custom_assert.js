@@ -4,6 +4,7 @@
 // node <file name>
 
 // extract our customer assert function from the tests
+// added to git here: https://github.com/ansarmuhammad/refactor2
 
 (function() {
 	"use strict";
