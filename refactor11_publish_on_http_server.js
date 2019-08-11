@@ -5,7 +5,7 @@
 
 // extract our customer assert function from the tests
 // added to git here: https://github.com/ansarmuhammad/refactor2
-// testing git
+// REVISIT THE LETSCODEJAVASCRIPT VIDEO 11 FOR RECORDED LIVE
 
 (function() {
 	"use strict";
@@ -38,8 +38,16 @@
             var receivedDate = false;
             response.setEncoding("utf8");
             console.log(" query on response returns: ", response.statusCode);
+        
+
+            response.on("data",function(chunk){
+                receivedDate = true;
+                console.log(" response on data: ", chunk);
+
+            }
+        
+         );
         }
-    
     );
 
     exports.start = function (portNumber){
