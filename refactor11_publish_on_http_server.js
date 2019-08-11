@@ -5,7 +5,7 @@
 
 // extract our customer assert function from the tests
 // added to git here: https://github.com/ansarmuhammad/refactor2
-// REVISIT THE LETSCODEJAVASCRIPT VIDEO 11 FOR RECORDED LIVE
+// REVISIT THE LETSCODEJAVASCRIPT VIDEO 14 FOR RECORDED LIVE
 
 (function() {
 	"use strict";
