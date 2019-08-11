@@ -25,6 +25,33 @@
 
     run_tests();
         
+    // http server code start
+
+
+
+    var http = require ("http");
+    var server;
+
+    var request = http.get("http://localhost:8080");
+    request.on ("response", function(response)
+        {
+            var receivedDate = false;
+            response.setEncoding("utf8");
+            console.log(" query on response returns: ", response.statusCode);
+        }
+    
+    );
+
+    exports.start = function (portNumber){
+        server = http.createServer();
+        server.on("request", function(request, response){
+            response.end("Hello world!");
+        });
+        server.listen(portNumber);
+
+    } // end of function 
+ 
+    // http server code end
     
 	function statement (obj)
 	 {    
